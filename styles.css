@@ -6,7 +6,18 @@
 }
 
 body {
-  background: linear-gradient(to right, #233329, #41b883);
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, #381d00, #d35400);
+}
+
+.frame {
+  width: 56vh;
+  height: 95vh;
+  border-radius: 15px;
+  background-color: black;
 }
 
 .grid-container {
@@ -23,25 +34,36 @@ body {
   font-size: 2rem;
   border: none;
   outline: none;
-  background-color: #111;
+  background-color: #333;
   color: #eee;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  margin: 4px;
 }
 
 .grid-container > button:hover {
-  background-color: #eee;
+  background-color: #aaa;
   color: #111;
 }
 
 .grid-container > .operator {
-  background: #41b88375;
+  background: #e67e22;
 }
 
-.span-two {
+.grid-container > .span-two {
   grid-column: span 2;
+  background-color: #666;
 }
+
+.grid-container > .span-two:nth-child(2) {
+  background-color: red;
+}
+
 .grid-container > .output {
   grid-column: 1 / -1;
-  background: #222;
+  background: #444;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
